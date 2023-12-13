@@ -1,0 +1,41 @@
+<!-- res/layout/item_producto.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Aquí coloca los elementos que componen un elemento individual del RecyclerView -->
+    <ImageView
+        android:id="@+id/imageProducto"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textNombreProducto"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textDescripcionProducto"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textPrecioProducto"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Comprar"/>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5sp">
+    <!-- Aquí coloca los elementos que componen un elemento individual del RecyclerView -->
+    <ImageView
+        android:id="@+id/imageViaje"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/textCantidadViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="8dp"/>
+
+
+    <TextView
+        android:id="@+id/textNombreViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textDescripcionViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textPrecioViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnViaje"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/greenBlack"
+        android:layout_height="wrap_content"
+
+        android:text="Comprar"/>
+</LinearLayout>

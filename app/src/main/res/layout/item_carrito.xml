@@ -1,0 +1,53 @@
+<!-- res/layout/item_carrito.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Reutiliza el ImageView de item_producto.xml -->
+    <ImageView
+        android:id="@+id/imageProductoCarrito"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Reutiliza el TextView de item_producto.xml para el nombre -->
+    <TextView
+        android:id="@+id/textNombreProductoCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Agrega un nuevo TextView para la cantidad en el carrito -->
+    <TextView
+        android:id="@+id/textCantidadProductoCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Agrega un nuevo TextView para el precio total en el carrito -->
+    <TextView
+        android:id="@+id/textPrecioTotalCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"/>
+    <Button
+        android:id="@+id/btnAumentarCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenBlack"
+        android:text="Aumentar Cantidad"/>
+
+    <Button
+        android:id="@+id/btnEliminarProducto"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorRed"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" />
+
+
+
+</LinearLayout>
